@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>To Do App</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+
+
+      <!-- Add New Items Here -->
+      <section class="new-items hero" id="new-items">
+        <div class="container">
+          <div class="row">
+            <h1>To Do Application: <span class="skinny">Javascript exercise</span></h1>
+            <p class="today" id="today" >Today's Date</p>
+            <p><input type="text" placeholder="Add Items Here" id ="add-items-here"></p>
+            <p  id="add-button" ><button><i class="fa fa-plus" aria-hidden="true"></i></button></p>
+          </div><!-- end .row -->
+        </div><!-- end .container-->
+      </section>
+      <!-- / New Items-->
+      <!-- Incomplete Items -->
+      <section class="incomplete-items" >
+        <div class="container">
+          <div class="row">
+            <h3>Incomplete Items</h3>
+            <ul id="incomplete-items">
+              <li data-before="27"><input type="checkbox"><label>Pay Bills</label><input type="text" value="Pay Bills"><button class="edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+</button><button class="delete"><i class="fa fa-times" aria-hidden="true"></i></button></li>
+              <li data-before="" class="active"><input type="checkbox"><label>item two</label><input type="text" value="item two"><button class="edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+</button><button class="delete"><i class="fa fa-times" aria-hidden="true"></i></button></li>
+            </ul>
+          </div><!-- end .row -->
+        </div><!-- end .container-->
+      </section>
+      <!-- /.incomplete-items -->
+      <!-- Completed Items -->
+      <section class="complete-items" >
+        <div class="container">
+          <div class="row">
+            <h3>Complete Items</h3>
+            <ul id="complete-items">
+              <li data-before="27"><input type="checkbox" checked="checked"><label>item one</label><input type="text" value="item one"><button class="edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+</button><button class="delete"><i class="fa fa-times" aria-hidden="true"></i></button></li>
+              <li data-before="" class="active"><input type="checkbox" checked="checked"><label>item two</label><input type="text" value="item two"><button class="edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+</button><button class="delete"><i class="fa fa-times" aria-hidden="true"></i></button></li>
+            </ul>
+          </div><!-- end .row -->
+        </div><!-- end .container-->
+      </section>
+      <!-- /.complete-items -->
+      <!--footer-->
+      <footer class="footer" id="footer">
+        <div class="container">
+          <div class="row">
+            This is the footer and my information will go here.
+          </div><!-- end .row -->
+        </div><!-- end .container-->
+      </footer>
+      <!-- /.footer-->
+
+  <script type="text/javascript" src="scripts/app.js"></script>
+</body>
+</html>
